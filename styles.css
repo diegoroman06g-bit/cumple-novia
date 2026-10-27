@@ -52,15 +52,17 @@ body {
 
 .grid-fotos img {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  height: auto; /* Permite que cada foto mantenga su proporción original (vertical u horizontal) */
+  max-height: 350px; /* Evita que las fotos verticales sean demasiado gigantes */
+  object-fit: contain; /* Asegura que la foto completa se vea sin recortes extraños */
+  background-color: #f9f9f9; /* Fondo suave por si la foto deja espacios */
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
 }
 
 .grid-fotos img:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 button {
