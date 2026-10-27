@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>¡Feliz Cumpleaños!</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
   <header class="hero">
-    <h1>¡Feliz Cumpleaños! MI AMOR 🎉🎂</h1>
+    <h1>¡Feliz Cumpleaños! 🎉🎂</h1>
     <p class="subtitulo">Una sorpresita especial creada con mucho cariño</p>
   </header>
 
@@ -20,11 +20,11 @@
       <h2>✨ Un mensaje para ti ✨</h2>
       <p>
         Hoy es un día muy especial para celebrar tu vida, tu alegría y todo lo bonito que iluminas a tu alrededor. 
-        Que este nuevo año de vida esté lleno de momentos inolvidables, risas inmensas y muchísimos sueños cumplidos. ¡Disfruta al máximo tu día MI AMOR!
+        Que este nuevo año de vida esté lleno de momentos inolvidables, risas inmensas y muchísimos sueños cumplidos. ¡Disfruta al máximo tu día!
       </p>
     </section>
 
-    <!-- Galería de Fotos (Ajustada para tus 5 fotos) -->
+    <!-- Galería de Fotos (Tus fotos normales) -->
     <section class="tarjeta galeria">
       <h2>📸 Nuestros Mejores Recuerdos</h2>
       <div class="grid-fotos">
@@ -36,10 +36,16 @@
       </div>
     </section>
 
-    <!-- Botón Interactivo -->
+    <!-- Botón Interactivo con Mensaje y Foto Oculta -->
     <section class="tarjeta sorpresas">
       <button id="btnSorpresa">🎁 ¡Haz clic aquí para una sorpresa!</button>
-      <p id="mensajeOculto" class="oculto">💖 ¡Te queremos muchísimo, que la pases increíble hoy y siempre!  TE MERECES ESTO Y MAS MI AMOR💖</p>
+      
+      <!-- Esto es lo que aparecerá al hacer clic -->
+      <div id="mensajeOculto" class="oculto">
+        <p class="texto-sorpresa">💖 ¡Te queremos muchísimo, que la pases increíble hoy y siempre! 💖</p>
+        <!-- Cambia 'foto_sorpresa.jpeg' por el nombre de la foto que quieras mostrar aquí -->
+        <img src="fotos/foto_sorpresa.jpeg" alt="Foto Sorpresa" class="img-sorpresa">
+      </div>
     </section>
 
   </main>
