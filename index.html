@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>¡Feliz Cumpleaños!</title>
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -24,27 +24,21 @@
       </p>
     </section>
 
-    <!-- Galería de Fotos (Tus fotos normales) -->
-    <section class="tarjeta galeria">
-      <h2>📸 Nuestros Mejores Recuerdos</h2>
-      <div class="grid-fotos">
-        <img src="fotos/foto1.jpeg" alt="Foto 1">
-        <img src="fotos/foto2.jpeg" alt="Foto 2">
-        <img src="fotos/foto3.jpeg" alt="Foto 3">
-        <img src="fotos/foto4.jpeg" alt="Foto 4">
-        <img src="fotos/foto5.jpeg" alt="Foto 5">
-      </div>
-    </section>
-
-    <!-- Botón Interactivo con Mensaje y Foto Oculta -->
+    <!-- Botón Interactivo que revelará TODAS las fotos -->
     <section class="tarjeta sorpresas">
-      <button id="btnSorpresa">🎁 ¡Haz clic aquí para una sorpresa!</button>
+      <button id="btnSorpresa">🎁 ¡Haz clic aquí para ver la sorpresa!</button>
       
-      <!-- Esto es lo que aparecerá al hacer clic -->
+      <!-- Todo esto aparecerá al hacer clic -->
       <div id="mensajeOculto" class="oculto">
         <p class="texto-sorpresa">💖 ¡Te queremos muchísimo, que la pases increíble hoy y siempre! 💖</p>
-        <!-- Cambia 'foto_sorpresa.jpeg' por el nombre de la foto que quieras mostrar aquí -->
-        <img src="fotos/foto_sorpresa.jpeg" alt="Foto Sorpresa" class="img-sorpresa">
+        
+        <div class="grid-fotos">
+          <img src="fotos/foto1.jpeg" alt="Foto 1">
+          <img src="fotos/foto2.jpeg" alt="Foto 2">
+          <img src="fotos/foto3.jpeg" alt="Foto 3">
+          <img src="fotos/foto4.jpeg" alt="Foto 4">
+          <img src="fotos/foto5.jpeg" alt="Foto 5">
+        </div>
       </div>
     </section>
 
