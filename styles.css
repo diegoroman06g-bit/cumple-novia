@@ -52,10 +52,10 @@ body {
 
 .grid-fotos img {
   width: 100%;
-  height: auto; /* Permite que cada foto mantenga su proporción original (vertical u horizontal) */
-  max-height: 350px; /* Evita que las fotos verticales sean demasiado gigantes */
-  object-fit: contain; /* Asegura que la foto completa se vea sin recortes extraños */
-  background-color: #f9f9f9; /* Fondo suave por si la foto deja espacios */
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+  background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
@@ -82,13 +82,27 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* Estilos para la sorpresa (texto + foto) */
 .oculto {
   display: none;
-  margin-top: 15px;
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.texto-sorpresa {
   font-weight: bold;
   color: #d63384;
   font-size: 1.2rem;
-  animation: fadeIn 0.5s ease-in-out;
+  margin-bottom: 15px;
+}
+
+.img-sorpresa {
+  width: 100%;
+  max-width: 300px; /* Tamaño elegante para la foto oculta */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border: 3px solid #ffecd2;
 }
 
 @keyframes fadeIn {
